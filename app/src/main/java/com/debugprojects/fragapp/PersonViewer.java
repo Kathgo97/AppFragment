@@ -37,7 +37,6 @@ public class PersonViewer extends Fragment {
         Persona p1;
 
         if(bundle != null){
-            //Toast.makeText(getActivity(), "Item: " + bundle.getString("KEY"), Toast.LENGTH_SHORT).show();
             p1 = (Persona) bundle.getSerializable(FRAG_KEY);
 
             circleImage.setImageResource(p1.getImage_resource_id());
@@ -45,6 +44,7 @@ public class PersonViewer extends Fragment {
             text_career.setText(p1.getCareer_var());
             text_mail.setText(p1.getMail_var());
 
+            Toast.makeText(getActivity(), "Item: " + p1.getFirstName_var()+" "+p1.getLastName1_var(), Toast.LENGTH_SHORT).show();
         }
 
         return view;
