@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.debugprojects.fragapp.ListViewer"
-        android:id="@+id/list_names"
+        android:id="@+id/list"
         >
 
     </fragment>

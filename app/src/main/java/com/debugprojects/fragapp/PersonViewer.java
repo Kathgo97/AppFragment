@@ -33,7 +33,6 @@ public class PersonViewer extends Fragment {
     private TextView text_name;
     private TextView text_mail;
     private TextView text_career;
-    private Button button_share;
 
     @Nullable
     @Override
@@ -50,10 +49,6 @@ public class PersonViewer extends Fragment {
             text_name.setText(p1.getFullName());
             text_career.setText(p1.getCareer_var());
             text_mail.setText(p1.getMail_var());
-        }else{
-
-            p1 = new Persona("###############", "###############",
-                    "###############", "###############", R.drawable.empty,"empty");
         }
 
         return view;
@@ -64,6 +59,5 @@ public class PersonViewer extends Fragment {
         text_name = v.findViewById(R.id.text_view_name);
         text_mail = v.findViewById(R.id.text_view_mail);
         text_career = v.findViewById(R.id.text_view_career);
-        button_share = v.findViewById(R.id.button_share);
     }
 }

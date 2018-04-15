@@ -22,7 +22,7 @@ public class PersonActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.replace(R.id.person_viewer, frag);
+        fragmentTransaction.replace(R.id.viewer, frag);
         fragmentTransaction.commit();
 
     }
