@@ -9,8 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp">
+        android:layout_weight="1">
 
         <TextView
             android:id="@id/empty"
@@ -25,9 +24,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:elevation="5dp"
-            android:src="@drawable/empty"
-            />
+            android:src="@drawable/empty" />
 
         <TextView
             android:id="@+id/empty"
@@ -38,74 +35,89 @@
 
     </LinearLayout>  <!-- Profile Photo -->
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_margin="8dp"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical">
+        android:layout_weight="1.5">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:text="@string/text_name"
-            android:gravity="center"
-            />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/text_view_name"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textColor="#000"
-            android:text="@string/nombre_de_prueba"
-            android:gravity="center"
-            />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:text="@string/text_mail"
-            android:gravity="center"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:text="@string/text_name"
+                android:gravity="center"
+                />
 
-        <TextView
-            android:id="@+id/text_view_mail"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textColor="#000"
-            android:text="@string/correo_de_prueba"
-            android:gravity="center"/>
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="@string/nombre_de_prueba"
+                android:gravity="center"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:text="@string/text_career"
-            android:gravity="center"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:text="@string/text_mail"
+                android:gravity="center"
+                />
 
-        <TextView
-            android:id="@+id/text_view_career"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textColor="#000"
-            android:text="@string/carrera_de_pueba"
-            android:gravity="center"/>
+            <TextView
+                android:id="@+id/text_view_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_margin="8dp"
+                android:text="@string/correo_de_prueba"
+                android:gravity="center"/>
 
-        <Button
-            android:id="@+id/button_share"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:text="@string/text_share_button"
-            android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:text="@string/text_career"
+                android:gravity="center"
+                />
 
-    </LinearLayout> <!-- Body -->
+            <TextView
+                android:id="@+id/text_view_career"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_margin="8dp"
+                android:text="@string/carrera_de_pueba"
+                android:gravity="center"/>
 
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+     <!-- Body -->
 </LinearLayout>

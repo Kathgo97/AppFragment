@@ -9,11 +9,12 @@ public class Persona implements Serializable {
     private String secondName_var;
     private String lastName1_var;
     private String lastName2_var;
+    private String image_name;
     private int image_resource_id;
     private String career_var;
     private String mail_var;
 
-    public Persona(String name, String lastName ,String career, String mail,int image_id){
+    public Persona(String name, String lastName ,String career, String mail,int image_id, String image_name){
         String[] names = name.split("\\s");
         String[] lastNames = lastName.split("\\s");
 
@@ -59,5 +60,9 @@ public class Persona implements Serializable {
 
     public String getMail_var() {
         return mail_var;
+    }
+
+    public String getImage_name() {
+        return image_name;
     }
 }

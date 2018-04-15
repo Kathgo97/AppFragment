@@ -13,6 +13,10 @@
         android:name="com.debugprojects.fragapp.ListViewer"
         android:id="@+id/list_names"
         />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
     <fragment
         android:layout_width="0dp"
         android:layout_height="match_parent"

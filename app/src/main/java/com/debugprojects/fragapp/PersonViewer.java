@@ -1,6 +1,9 @@
 package com.debugprojects.fragapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.app.Fragment;
 import android.os.Bundle;
@@ -12,6 +15,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 import static com.debugprojects.fragapp.ListViewer.FRAG_KEY;
 
@@ -19,6 +26,8 @@ import static com.debugprojects.fragapp.ListViewer.FRAG_KEY;
  * Created by Douglashdezt
  */
 public class PersonViewer extends Fragment {
+
+    private Persona p1;
 
     private CircleImageView circleImage;
     private TextView text_name;
@@ -34,17 +43,17 @@ public class PersonViewer extends Fragment {
         getAllViews(view);
 
         Bundle bundle = this.getArguments();
-        Persona p1;
 
         if(bundle != null){
             p1 = (Persona) bundle.getSerializable(FRAG_KEY);
-
             circleImage.setImageResource(p1.getImage_resource_id());
             text_name.setText(p1.getFullName());
             text_career.setText(p1.getCareer_var());
             text_mail.setText(p1.getMail_var());
+        }else{
 
-            Toast.makeText(getActivity(), "Item: " + p1.getFirstName_var()+" "+p1.getLastName1_var(), Toast.LENGTH_SHORT).show();
+            p1 = new Persona("###############", "###############",
+                    "###############", "###############", R.drawable.empty,"empty");
         }
 
         return view;

@@ -52,7 +52,7 @@ public class ListViewer extends ListFragment implements AdapterView.OnItemClickL
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
-        Persona person = new Persona(names[pos], lastnames[pos], careers[pos], mails[pos], getImageId(imgNames[pos]));
+        Persona person = new Persona(names[pos], lastnames[pos], careers[pos], mails[pos], getImageId(imgNames[pos]), imgNames[pos]);
         Bundle sendBundle =  new Bundle();
         sendBundle.putSerializable(FRAG_KEY, person);
 
