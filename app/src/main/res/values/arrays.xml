@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="people_names">
+        <item>Douglas Antonio</item>
+        <item>Alejandra María</item>
+        <item>Oscar Eduardo</item>
+        <item>Katherine Ivania</item>
+        <item>Eduardo Enrique</item>
+        <item>Emely Leticia</item>
+        <item>Alejandra Margarita</item>
+    </string-array>
+
+    <string-array name="people_lastnames">
+        <item>Hernández Torres</item>
+        <item>Ramírez García</item>
+        <item>Orellana Torres</item>
+        <item>Gomar Aguilar</item>
+        <item>Alvarenga López</item>
+        <item>Quintanilla Sánchez</item>
+        <item>López Weil</item>
+    </string-array>
+
+    <string-array name="list_names">
+        <item>Douglas Hernández</item>
+        <item>Alejandra Ramírez</item>
+        <item>Oscar Orellana</item>
+        <item>Katherine Gomar</item>
+        <item>Eduardo Alvarenga</item>
+        <item>Emely Quintanilla</item>
+        <item>Margarita Weil</item>
+    </string-array>
+
+    <string-array name="people_image">
+        <item>daht</item>
+        <item>amrg</item>
+        <item>oeot</item>
+        <item>kiga</item>
+        <item>eeal</item>
+        <item>elqs</item>
+        <item>amlw</item>
+    </string-array>
+
+    <string-array name="people_mail">
+        <item>00004516</item>
+        <item>00005516</item>
+        <item>00094816</item>
+        <item>00011616</item>
+        <item>00112016</item>
+        <item>00041817</item>
+        <item>00082816</item>
+    </string-array>
+
+    <string-array name="people_career">
+        <item>Ingeniería Informática</item>
+        <item>Arquitectura</item>
+        <item>Licenciatura en Economía</item>
+        <item>Ingeniería Informática</item>
+        <item>Ingenieria Química</item>
+        <item>Licenciatura en Psicología</item>
+        <item>Licenciatura en Comunicación Social</item>
+    </string-array>
+
+</resources>
