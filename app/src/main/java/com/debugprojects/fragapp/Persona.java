@@ -1,7 +1,9 @@
 package com.debugprojects.fragapp;
 import android.net.Uri;
 
-public class Persona {
+import java.io.Serializable;
+
+public class Persona implements Serializable {
     private String fullName;
     private String firstName_var;
     private String secondName_var;
@@ -24,7 +26,7 @@ public class Persona {
         image_resource_id= image_id;
 
         career_var = career;
-        mail_var = mail;
+        mail_var = mail + "@uca.edu.sv";
     }
 
     public String getFullName() {
