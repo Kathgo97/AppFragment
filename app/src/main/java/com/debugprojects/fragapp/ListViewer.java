@@ -77,29 +77,8 @@ public class ListViewer extends ListFragment implements AdapterView.OnItemClickL
     }
 
     private int getImageId(String ImgName){
-        switch (ImgName){
-            case "amrg":
-                return R.drawable.amrg;
+        return getActivity().getResources().getIdentifier("drawable/"+ImgName, null, getActivity().getPackageName());
 
-            case "daht":
-                return R.drawable.daht;
-
-            case "oeot":
-                return R.drawable.oeot;
-
-            case "amlw":
-                return R.drawable.amlw;
-
-            case "kiga":
-                return R.drawable.kiga;
-
-            case "elqs":
-                return R.drawable.elqs;
-
-            case "eeal":
-                return R.drawable.eeal;
-        }
-        return 0;
     }
 
 }

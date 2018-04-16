@@ -8,6 +8,8 @@
         <item>Eduardo Enrique</item>
         <item>Emely Leticia</item>
         <item>Alejandra Margarita</item>
+        <item>Carlos Antonio</item>
+        <item>Leonel Alejandro</item>
     </string-array>
 
     <string-array name="people_lastnames">
@@ -18,6 +20,8 @@
         <item>Alvarenga López</item>
         <item>Quintanilla Sánchez</item>
         <item>López Weil</item>
+        <item>Minero Dubón</item>
+        <item>Ramos Choto</item>
     </string-array>
 
     <string-array name="list_names">
@@ -28,6 +32,8 @@
         <item>Eduardo Alvarenga</item>
         <item>Emely Quintanilla</item>
         <item>Margarita Weil</item>
+        <item>Carlos Dubon</item>
+        <item>Leonel Choto</item>
     </string-array>
 
     <string-array name="people_image">
@@ -38,6 +44,8 @@
         <item>eeal</item>
         <item>elqs</item>
         <item>amlw</item>
+        <item>camd</item>
+        <item>larc</item>
     </string-array>
 
     <string-array name="people_mail">
@@ -48,6 +56,8 @@
         <item>00112016</item>
         <item>00041817</item>
         <item>00082816</item>
+        <item>00058016</item>
+        <item>00146516</item>
     </string-array>
 
     <string-array name="people_career">
@@ -58,6 +68,8 @@
         <item>Ingenieria Química</item>
         <item>Licenciatura en Psicología</item>
         <item>Licenciatura en Comunicación Social</item>
+        <item>Ingenieria Informatica</item>
+        <item>Ingenieria Quimica</item>
     </string-array>
 
 </resources>
